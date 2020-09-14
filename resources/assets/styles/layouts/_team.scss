@@ -1,0 +1,48 @@
+.team {
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: gutter(45);
+    background-color: $black;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: $transition;
+
+      &:hover {
+        opacity: 0.9;
+        object-position: center -10px;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: gutter(8);
+  }
+
+  &__text {
+    padding: gutter(4) 0;
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: gutter(2);
+    max-width: gutter(120);
+    margin: gutter(4) 0;
+  }
+
+  &__box {
+    background-color: $bg;
+    padding: gutter(3) gutter(4);
+  }
+}

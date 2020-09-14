@@ -1,0 +1,37 @@
+.stats {
+  margin: auto;
+  text-align: center;
+
+  &__desc {
+    max-width: gutter(61);
+    margin: gutter(4) auto 0;
+    display: block;
+  }
+
+  &__years {
+    font-size: gutter(9);
+    font-weight: $bold;
+    font-family: $font-title;
+    color: $secondary3;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: gutter(12) auto;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 gutter(4);
+    text-align: left;
+  }
+
+  &__count {
+    padding-left: gutter(2);
+  }
+}

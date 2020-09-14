@@ -1,0 +1,17 @@
+.footer {
+  background-color: $bg;
+  color: $black;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: gutter(2);
+    padding-bottom: gutter(2);
+  }
+
+  &__logo {
+    width: gutter(10);
+    height: auto;
+  }
+}

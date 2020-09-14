@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  box-shadow: 0 5px 15px $bg;
+
+  &__row {
+    width: 100%;
+    height: gutter(12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    img {
+      height: gutter(5);
+      width: auto;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: gutter(3);
+    }
+  }
+}

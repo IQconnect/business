@@ -1,0 +1,25 @@
+.contact-bar {
+  background-color: $secondary;
+  padding-top: gutter(8);
+  padding-bottom: gutter(8);
+  color: $white;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: $semi-bold;
+  }
+
+  &__buttons {
+    display: inline-block;
+    align-items: center;
+
+    a {
+      margin-left: gutter(3);
+    }
+  }
+}

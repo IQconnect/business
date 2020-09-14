@@ -1,0 +1,40 @@
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: gutter(2.5);
+  margin: gutter(2) auto;
+  max-width: gutter(100);
+  color: $black;
+
+  &__item {
+    padding: gutter(8) gutter(5);
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $black;
+    transition: $transition;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+      text-decoration: none;
+      transform: translateY(4px);
+    }
+
+    &--color1 {
+      background-color: $secondary;
+      color: $white;
+    }
+
+    &--color2 {
+      background-color: $secondary2;
+      color: $white;
+    }
+
+    &--color3 {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}

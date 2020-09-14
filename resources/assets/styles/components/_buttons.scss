@@ -1,0 +1,86 @@
+.button,
+.wp-block-file a,
+.wp-block-button__link {
+  @include cssLock("font-size", 360, $container, (14, 14));
+
+  color: $primary;
+  font-family: $font-main;
+  font-weight: $bold;
+  padding: gutter(1.5) gutter(4);
+  display: inline-block;
+  border: 1px solid $primary;
+  text-transform: uppercase;
+  border-radius: 0;
+  cursor: pointer;
+
+  @include media("<md") {
+    padding: gutter(0.9) gutter(2.5);
+  }
+
+  &--icon {
+    background-color: $primary;
+    color: $white;
+    font-size: gutter(2.8);
+    padding: gutter(0.7) gutter(1.5);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: lighten($primary, 5);
+    text-decoration: none;
+  }
+
+  &--text {
+    position: relative;
+    color: $white;
+    border: 0;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% - 10px);
+      height: 1px;
+      width: calc(100% - 80px);
+      background-color: $white;
+    }
+  }
+
+  &--submit {
+    background: transparent;
+  }
+
+  &--light {
+    color: $secondary;
+    background-color: $white;
+    border-color: $white;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+
+  &--center {
+    text-align: center;
+    margin: auto;
+  }
+
+  &--info {
+    background-color: $info;
+
+    &:hover {
+      background-color: darken($info, 10);
+    }
+  }
+}

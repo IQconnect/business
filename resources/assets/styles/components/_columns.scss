@@ -1,0 +1,19 @@
+.columns {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: gutter(16);
+  margin: gutter(5) 0;
+  padding: gutter(2) 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+    background-color: darken($bg, 5);
+  }
+}

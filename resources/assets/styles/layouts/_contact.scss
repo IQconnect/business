@@ -1,0 +1,8 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__desc {
+    max-width: gutter(60);
+  }
+}
