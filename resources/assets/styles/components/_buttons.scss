@@ -12,6 +12,7 @@
   text-transform: uppercase;
   border-radius: 0;
   cursor: pointer;
+  transition: $transition;
 
   @include media("<md") {
     padding: gutter(0.9) gutter(2.5);
@@ -39,10 +40,6 @@
     color: $white;
     border: 0;
 
-    &:hover {
-      background: transparent;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -53,6 +50,17 @@
       height: 1px;
       width: calc(100% - 80px);
       background-color: $white;
+      transition: $transition;
+    }
+
+    &:hover {
+      background: transparent;
+      transform: translateY(-5px);
+      color: $black;
+
+      &::after {
+        background-color: $black;
+      }
     }
   }
 

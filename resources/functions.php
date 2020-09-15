@@ -103,8 +103,8 @@ function get_option_field($var) {
     return get_field($var, 'option');
 }
 
-register_nav_menu( 'left', 'left' );
-register_nav_menu( 'right', 'right' );
+// register_nav_menu( 'left', 'left' );
+// register_nav_menu( 'right', 'right' );
 
 function add_svg_to_upload_mimes( $types ) {
     $types[ 'svg' ] = 'image/svg+xml';
@@ -137,3 +137,20 @@ function my_acf_init()
 }
 
 add_action('acf/init', 'my_acf_init');
+
+function getMenu($location) {
+    $menu_args = array(
+      'theme_location' => $location,
+      'items_wrap' => '<ul id="%1$s" class="%2$s menu__list">%3$s</ul>',
+      'menu_class' => 'menu',
+      'container' => '',
+    );
+    return wp_nav_menu($menu_args);
+}
+
+function atg_menu_classes($classes, $item, $args) {
+    $classes[] = 'nav__item';
+    return $classes;
+}
+
+add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);

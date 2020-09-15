@@ -11,13 +11,22 @@
         <a class="button" href="#">
           Kontakt
         </a>
-        <div class="burger burger-slip">
+        <div class="burger burger-slip header__burger">
           <div class="burger-lines"></div>
         </div>
       </div>
     </div>
   </div>
 </header>
+<nav class="nav col-auto" data-nav>
+  @if (has_nav_menu('primary_navigation'))
+   {!! wp_nav_menu(
+     [
+       'theme_location' => 'primary_navigation',
+       'menu_class' => 'nav__menu',
+     ]) !!}
+ @endif
+</nav>
 @include('components.top')
 @include('components.stats')
 @include('components.services')

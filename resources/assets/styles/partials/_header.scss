@@ -29,4 +29,8 @@
       margin-left: gutter(3);
     }
   }
+
+  &__burger {
+    z-index: 900;
+  }
 }
