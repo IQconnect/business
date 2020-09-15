@@ -25,7 +25,7 @@
               </span>
             </div>
             <div class="chart__bar">
-              <div class="chart__bar-color1" style="width: 30%">
+              <div class="chart__bar-color1 wow chart__bar-animation" style="width: 30%">
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
               </span>
             </div>
             <div class="chart__bar">
-              <div class="chart__bar-color2" style="width: 50%">
+              <div class="chart__bar-color2 wow chart__bar-animation" style="width: 50%">
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@
               </span>
             </div>
             <div class="chart__bar">
-              <div class="chart__bar-color3" style="width: 60%">
+              <div class="chart__bar-color3 wow chart__bar-animation" style="width: 60%">
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@
               </span>
             </div>
             <div class="chart__bar">
-              <div class="chart__bar-color4" style="width: 80%">
+              <div class="chart__bar-color4 wow chart__bar-animation" style="width: 80%">
               </div>
             </div>
           </div>

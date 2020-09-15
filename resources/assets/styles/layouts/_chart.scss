@@ -48,13 +48,16 @@
     border-radius: 5px;
     overflow: hidden;
 
+    &-animation {
+      animation: bar 4s;
+    }
+
     &-color1 {
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       background-color: $primary;
-      animation: bar 4s;
     }
 
     &-color2 {
@@ -63,7 +66,6 @@
       left: 0;
       height: 100%;
       background-color: $secondary2;
-      animation: bar 4s;
     }
 
     &-color3 {
@@ -72,7 +74,6 @@
       left: 0;
       height: 100%;
       background-color: $secondary;
-      animation: bar 4s;
     }
 
     &-color4 {
@@ -81,7 +82,6 @@
       left: 0;
       height: 100%;
       background-color: $secondary3;
-      animation: bar 4s;
     }
   }
 }

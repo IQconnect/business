@@ -6,6 +6,7 @@ import './autoload/**/*';
 
 // import library
 import PureCounter from '@srexi/purecounterjs';
+import WOW from 'wowjs';
 
 // import local dependencies
 import Router from './util/Router';
@@ -38,6 +39,7 @@ jQuery(document).ready(() => {
   wp_block_gallery.init();
   gmap.init();
   slider.init();
+  new WOW.WOW().init();
 });
 
 setTimeout(()=>{
