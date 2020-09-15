@@ -56,6 +56,33 @@
     }
   }
 
+  &--text-color {
+    color: $primary;
+    position: relative;
+    border: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% - 10px);
+      height: 1px;
+      width: calc(100% - 80px);
+      background-color: $primary;
+    }
+
+    &:hover {
+      background: transparent;
+      color: $secondary2;
+
+      &::after {
+        background-color: $secondary2;
+      }
+    }
+  }
+
   &--submit {
     background: transparent;
   }
