@@ -15,7 +15,7 @@
       <div class="stats__item">
         <img src="@asset("images/icon1.png")" alt="ikona" />
         <div class="stats__count">
-          <span class="headline">
+          <span class="headline purecounter" data-purecounter-start="0" data-purecounter-end="8000" data-purecounter-duration="1">
             8000
           </span>
           <span class="title title--small">
@@ -26,7 +26,7 @@
       <div class="stats__item">
         <img src="@asset("images/icon2.png")" alt="ikona" />
         <div class="stats__count">
-          <span class="headline">
+          <span class="headline purecounter" data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1">
             85
           </span>
           <span class="title title--small">
@@ -37,7 +37,7 @@
       <div class="stats__item">
         <img src="@asset("images/icon3.png")" alt="ikona" />
         <div class="stats__count">
-          <span class="headline">
+          <span class="headline purecounter" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1">
             200
           </span>
           <span class="title title--small">
@@ -48,7 +48,7 @@
       <div class="stats__item">
         <img src="@asset("images/icon4.png")" alt="ikona" />
         <div class="stats__count">
-          <span class="headline">
+          <span class="headline purecounter" data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1">
             1000
           </span>
           <span class="title title--small">

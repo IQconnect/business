@@ -6,6 +6,7 @@
     <h2 class="title">
       Zadowolony klient powie o firmie trzem<br> 
       znajomym, niezadowolony dziesięciu
+      <i class="slider__icon fas fa-quote-left"></i>
     </h2>
     <div class="main-carousel">
       <div class="slider carousel-cell">

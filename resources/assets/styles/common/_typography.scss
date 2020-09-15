@@ -16,6 +16,7 @@
 .title {
   @include cssLock("font-size", 360, $container, (25, 30));
 
+  position: relative;
   font-family: $font-title;
   font-weight: $bold;
   display: block;

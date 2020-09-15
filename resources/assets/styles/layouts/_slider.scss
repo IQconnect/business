@@ -9,6 +9,15 @@
   z-index: -2;
   margin: gutter(8) auto;
 
+  &__icon {
+    position: absolute;
+    font-size: gutter(8);
+    top: - gutter(6);
+    left: gutter(18);
+    color: $bg;
+    z-index: -1;
+  }
+
   &__content {
     position: relative;
     color: $black;
