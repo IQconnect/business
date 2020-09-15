@@ -1,43 +1,34 @@
 const CONFIG = {
-  ELEM: 'header',
-  CLASS: 'header--hide',
-  OFFSET: 2,
-};
+    ELEM: '[header]',
+    CLASS: '-hide',
+}
 
-var s, ls;
+const { ELEM, CLASS } = CONFIG;
 
 const header = {
-  init() {
-    const { ELEM, CLASS, OFFSET } = CONFIG;
+    init() {
+        this.elem = document.querySelector(ELEM);
+        this.class = CLASS;
 
-    this.elem = document.querySelector(`[${ELEM}]`);
-    this.class = CLASS;
-    this.offset = OFFSET;
+        this.addEvents();
+    },
 
-    this.position();
-    this.scroll();
-  },
+    addEvents() {
+        window.addEventListener('scroll', () => {
+            console.log('scroll');
+            this.s = window.scrollY;
 
-  position() {
-    if(window.pageYOffset > 50) {
-      this.elem.classList.add(this.class);
-    }
-  },
+            if (this.s > this.ls) {
+                this.elem.classList.add(CLASS);
+            }
 
-  scroll() {
-    window.onscroll = () => {
-      s = window.scrollY;
-      const isScrollDown =  s > 50 && s > ls + this.offset ? true : false;
-      const isScrollTop = s < 50  ? true : false;
-      if (isScrollDown)
-        this.elem.classList.add(this.class);
+            else {
+                this.elem.classList.remove(CLASS);
+            }
 
-      if (isScrollTop)
-        this.elem.classList.remove(this.class);
-
-      ls = s;
-    };
-  },
-};
+            this.ls = this.s;
+        })
+    },
+}
 
 export default header;

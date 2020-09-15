@@ -17,24 +17,26 @@
       </div>
     </div>
   </div>
+  <nav class="nav col-auto" data-nav>
+    @if (has_nav_menu('primary_navigation'))
+     {!! wp_nav_menu(
+       [
+         'theme_location' => 'primary_navigation',
+         'menu_class' => 'nav__menu',
+       ]) !!}
+    @endif
+  </nav>
 </header>
-<nav class="nav col-auto" data-nav>
-  @if (has_nav_menu('primary_navigation'))
-   {!! wp_nav_menu(
-     [
-       'theme_location' => 'primary_navigation',
-       'menu_class' => 'nav__menu',
-     ]) !!}
- @endif
-</nav>
-@include('components.top')
-@include('components.stats')
-@include('components.services')
-@include('components.video')
-@include('components.chart')
-@include('components.team')
-@include('components.slider')
-@include('components.prices')
-@include('components.blog')
-@include('components.answers')
-@include('components.boxes')
+<div class="sections">
+  @include('components.top')
+  @include('components.stats')
+  @include('components.services')
+  @include('components.video')
+  @include('components.chart')
+  @include('components.team')
+  @include('components.slider')
+  @include('components.prices')
+  @include('components.blog')
+  @include('components.answers')
+  @include('components.boxes')
+</div>

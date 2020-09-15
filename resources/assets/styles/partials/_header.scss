@@ -1,6 +1,12 @@
 .header {
+  position: fixed;
+  top: 0;
   width: 100%;
-  box-shadow: 0 5px 15px $bg;
+  box-shadow: 0 5px 15px rgba($black, 0.05);
+  z-index: 700;
+  background-color: $white;
+  transition: $transition;
+  transform: translateY(0);
 
   &__row {
     width: 100%;
@@ -31,6 +37,12 @@
   }
 
   &__burger {
+    position: relative;
     z-index: 900;
+  }
+
+  &.-hide {
+    transform: translateY(-100%);
+    box-shadow: none;
   }
 }
