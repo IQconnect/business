@@ -6,6 +6,10 @@
   gap: gutter(4);
   margin: gutter(5) 0;
 
+  @include media("<md") {
+    grid-template-columns: 1fr;
+  }
+
   &__item {
     display: block;
     width: 100%;
@@ -27,6 +31,14 @@
     position: relative;
     width: 100%;
     height: gutter(40);
+
+    @include media("<lg") {
+      height: gutter(30);
+    }
+
+    @include media("<md") {
+      height: gutter(25);
+    }
 
     img {
       width: 100%;
@@ -56,6 +68,10 @@
     color: $white;
     opacity: 0.8;
     margin-bottom: gutter(0.5);
+
+    @include media("<md") {
+      font-size: 50px;
+    }
   }
 
   &__tags {
