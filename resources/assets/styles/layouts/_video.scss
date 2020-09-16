@@ -1,11 +1,12 @@
 .video {
   $root: &;
 
+  @include cssLock("height", 360, $container, (250, 480));
+
   position: relative;
   background-color: $white;
   display: block;
   width: 100%;
-  height: gutter(60);
   overflow: hidden;
 
   &:hover {
@@ -28,6 +29,9 @@
   }
 
   &__play {
+    @include cssLock("height", 360, $container, (60, 100));
+    @include cssLock("width", 360, $container, (60, 100));
+
     position: absolute;
     top: 50%;
     left: 50%;
