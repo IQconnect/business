@@ -6,10 +6,15 @@
     max-width: gutter(61);
     margin: gutter(4) auto 0;
     display: block;
+
+    @include media("<md") {
+      margin: gutter(2) auto 0;
+    }
   }
 
   &__years {
-    font-size: gutter(9);
+    @include cssLock("font-size", 360, $container, (60, 75));
+
     font-weight: $bold;
     font-family: $font-title;
     color: $secondary3;
@@ -20,8 +25,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
-    margin: gutter(12) auto;
+    //flex-wrap: wrap;
+    margin: gutter(10) auto;
+
+    @include media("<lg") {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin: gutter(6) auto;
+      max-width: gutter(66);
+    }
   }
 
   &__item {
@@ -29,6 +42,11 @@
     align-items: flex-start;
     padding: 0 gutter(4);
     text-align: left;
+    margin: gutter(2) 0;
+
+    @include media("<md") {
+      padding: 0 gutter(2);
+    }
   }
 
   &__count {
