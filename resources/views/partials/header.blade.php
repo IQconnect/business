@@ -5,10 +5,10 @@
         <img src="{{  get_option_field("logo")['url'] }}" alt="{{  get_option_field("logo")['alt'] }}">
       </a>
       <div class="header__buttons">
-        <a class="button button--icon" href="#">
+        <a class="button button--icon header__social" href="#">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a class="button" href="#">
+        <a class="button header__contact" href="#">
           Kontakt
         </a>
         <div class="burger burger-slip header__burger">

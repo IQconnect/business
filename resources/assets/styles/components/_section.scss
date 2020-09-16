@@ -5,11 +5,11 @@
   overflow: hidden;
 
   @include media("<=lg") {
-    padding: gutter(6) 0;
+    padding: gutter(5) 0;
   }
 
   @include media("<md") {
-    padding: gutter(5) 0;
+    padding: gutter(3) 0;
   }
 
   &--center {

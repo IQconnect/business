@@ -61,6 +61,11 @@
       margin-top: -4px;
       display: inline-block;
       line-height: 22px;
+
+      @include media("<md") {
+        font-size: 11px;
+        line-height: 20px;
+      }
     }
 
     &:checked ~ #{$root}__check::after {
@@ -75,6 +80,16 @@
     height: gutter(3);
     width: gutter(3);
     border: 2px solid $primary;
+
+    @include media("<md") {
+      height: gutter(2.5);
+      width: gutter(2.5);
+
+      &::after {
+        width: 5px !important;
+        height: 8px !important;
+      }
+    }
 
     &::after {
       content: "";

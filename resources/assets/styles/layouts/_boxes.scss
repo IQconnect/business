@@ -6,6 +6,11 @@
   max-width: gutter(100);
   color: $black;
 
+  @include media("<md") {
+    grid-template-columns: repeat(2, 1fr);
+    gap: gutter(1);
+  }
+
   &__item {
     padding: gutter(8) gutter(5);
     background-color: $bg;
@@ -14,6 +19,15 @@
     justify-content: center;
     color: $black;
     transition: $transition;
+
+    @include media("<md") {
+      padding: gutter(2.5);
+      min-height: gutter(25);
+
+      br {
+        display: none;
+      }
+    }
 
     &:hover {
       background-color: $black;
