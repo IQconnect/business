@@ -1,5 +1,7 @@
 .prices {
-  &__text {
-    padding: gutter(4) 0;
+  &__table {
+    @include media("<md") {
+      display: none;
+    }
   }
 }
