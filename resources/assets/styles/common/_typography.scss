@@ -1,6 +1,12 @@
 %text {
   margin: 0;
   padding: 0;
+
+  @include media("<md") {
+    br {
+      display: none;
+    }
+  }
 }
 
 .headline {
