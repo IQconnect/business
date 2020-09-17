@@ -19,6 +19,7 @@ import header from './components/header';
 import preloader from './components/preloader';
 import wp_block_gallery from './components/wp-block-gallery';
 import gmap from './components/gmap';
+import accordion from './components/accordion';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -36,6 +37,7 @@ jQuery(document).ready(() => {
   header.init();
   preloader.init();
   burger.init();
+  accordion.init();
   wp_block_gallery.init();
   gmap.init();
   slider.init();

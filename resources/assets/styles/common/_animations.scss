@@ -3,3 +3,13 @@
     width: 0%;
   }
 }
+
+@keyframes accordion {
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: gutter(100);
+  }
+}
