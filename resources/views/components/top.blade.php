@@ -1,5 +1,8 @@
 <section class="section">
   <div class="container">
+    <i class="fas fa-plus container__icon1"></i>
+    <i class="fas fa-play container__icon2"></i>
+    <i class="fas fa-dot-circle container__icon3"></i>
     <h2 class="title">
       Wspieram Klientów w  budowaniu i rozwijaniu biznesów<br>
       w oparciu o strategiczne wzorce myślenia.
