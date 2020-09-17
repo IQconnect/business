@@ -7,17 +7,20 @@
     <span class="subtitle">
       Obserwuję, analizuję, wyjaśniam, tworzę, inspiruję.
     </span>
+    <span class="sign">
+      Dr. Agata Pawłowska
+    </span>
     <div class="top">
       <a href="#" class="top__box">
-        <img src="@asset('images/img1.jpg')" alt="Doradztwo biznesowe dla firm" class="top__image"/>
+        <img src="@asset('images/img1.jpg')" alt="o mnie" class="top__image"/>
         <div class="top__bar">
           <h3 class="title title--small is-regular">
-            <i class="fas fa-angle-double-right"></i> Doradztwo biznesowe dla firm
+            <i class="fas fa-angle-double-right"></i> O mnie
           </h3>
         </div>
       </a>
       <a href="#" class="top__box">
-        <img src="@asset('images/img2.jpg')" alt="Doradztwo biznesowe dla firm" class="top__image"/>
+        <img src="@asset('images/img2.jpg')" alt="zakres usług" class="top__image"/>
         <div class="top__bar top__bar--color2">
           <h3 class="title title--small is-regular">
             <i class="fas fa-angle-double-right"></i> Zakres usług 
@@ -25,7 +28,7 @@
         </div>
       </a>
       <a href="#" class="top__box">
-        <img src="@asset('images/img3.jpg')" alt="Doradztwo biznesowe dla firm" class="top__image"/>
+        <img src="@asset('images/img3.jpg')" alt="moje wartości" class="top__image"/>
         <div class="top__bar top__bar--color3">
           <h3 class="title title--small is-regular">
             <i class="fas fa-angle-double-right"></i> Moje wartości

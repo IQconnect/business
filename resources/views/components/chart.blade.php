@@ -2,7 +2,7 @@
   <div class="container">
     <div class="chart">
       <div class="chart__image">
-        <img src="@asset("images/photo1.jpg")" alt="zdjęcie" />
+        <img src="@asset("images/photo2.jpg")" alt="zdjęcie" />
       </div>
       <div class="chart__content">
         <div class="chart__desc">

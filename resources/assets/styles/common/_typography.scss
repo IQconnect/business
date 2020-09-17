@@ -82,7 +82,7 @@
   font-family: $font-main;
   font-weight: $bold;
   display: block;
-  padding-top: gutter(2.5);
+  padding-top: gutter(2);
 
   @extend %text;
 }
@@ -114,4 +114,12 @@
     font-size: 15px;
     line-height: 24px;
   }
+}
+
+.sign {
+  font-family: $font-sign;
+  font-weight: $regular;
+  font-size: 27px;
+  display: block;
+  margin-top: gutter(3);
 }

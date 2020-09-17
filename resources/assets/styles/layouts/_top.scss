@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 55% auto;
   grid-template-rows: gutter(27) gutter(27);
-  margin-top: gutter(5);
+  margin-top: gutter(3);
 
   @include media("<lg") {
     grid-template-rows: gutter(22) gutter(22);

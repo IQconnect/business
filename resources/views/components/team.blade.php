@@ -1,5 +1,5 @@
 <section class="section team">
-  <div class="team__gallery">
+  {{--  <div class="team__gallery">
     <a class="team__image" data-fancybox="team" href="@asset("images/photo2.jpg")">
       <img src="@asset("images/photo2.jpg")" alt="zdjęcie">
     </a>
@@ -15,7 +15,7 @@
     <a class="team__image" data-fancybox="team" href="@asset("images/photo6.jpg")">
       <img src="@asset("images/photo6.jpg")" alt="zdjęcie">
     </a>
-  </div>
+  </div>  --}}
   <div class="team__content">
     <div class="container">
       <span class="prefix">
@@ -37,7 +37,12 @@
         <p>
           Przechodząc do meritum. O takich jak ja mówi się „Człowiek orkiestra” co potwierdzają  wyniki testu Belbina opisujące najczęściej przyjmowaną przeze mnie „Rolę Zespołową”. Co to dla Ciebie może oznaczać pod kątem moich typowych cech i talentów?
         </p>
-        <h3 class="subtitle">
+
+        <a class="link link--arrows" href="#">
+          Czytaj więcej
+        </a>
+
+        {{--  <h3 class="subtitle">
           Role zespołowe:
         </h3>
         <div class="team__boxes">
@@ -85,7 +90,7 @@
         </p>
         <p>
           Mam nadzieję, że udało mi się zachęcić Cię do kontaktu, co pozwoli w rzeczywistości zweryfikować Ci swoje wyobrażenia na mój temat.
-        </p>
+        </p>  --}}
       </div>
     </div>
   </div>

@@ -69,13 +69,11 @@
             </a>
           </div>
         </div>
-        <div class="prices__table">
-          @include("blocks.prices-table")
-          <p>
-            W celu uzyskania indywidualnej wyceny usług doradczych i/lub szkoleniowych<br>
-            uprzejmie proszę  o kontakt na adres <a class="link" href="mailto:info@businessconsultancy.pl">info@businessconsultancy.pl</a>
-          </p>
-        </div>  
+        @include("blocks.prices-table")
+        <p>
+          W celu uzyskania indywidualnej wyceny usług doradczych i/lub szkoleniowych<br>
+          uprzejmie proszę  o kontakt na adres <a class="link" href="mailto:info@businessconsultancy.pl">info@businessconsultancy.pl</a>
+        </p>
       </div>
     </div>
   </div>
