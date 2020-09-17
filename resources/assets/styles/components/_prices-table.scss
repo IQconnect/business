@@ -2,20 +2,27 @@
   width: 100%;
   text-align: center;
   border-collapse: collapse;
-  border: 1px solid $primary;
+  //border: 1px solid $primary;
   margin: gutter(3) auto !important;
 
   thead {
-    border-bottom: 1px solid $primary;
+    //border-bottom: 1px solid $primary;
 
     th {
       padding: gutter(2) gutter(1) gutter(1);
       display: table-cell;
       vertical-align: middle;
+      border: 1px solid $bg;
 
-      &:nth-child(2n) {
-        background-color: $bg;
+      &:first-child {
+        border-left: 0;
+        border-bottom: 0;
+        border-top: 0;
       }
+
+      // &:nth-child(2n) {
+      //   //background-color: $bg;
+      // }
     }
   }
 
