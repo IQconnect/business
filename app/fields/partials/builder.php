@@ -16,6 +16,7 @@ $builder
             ->addLayout(get_field_partial('components.chart'))
             ->addLayout(get_field_partial('components.text'))
             ->addLayout(get_field_partial('components.slider'))
+            ->addLayout(get_field_partial('components.prices'))
             ->addLayout(get_field_partial('components.blog'))
             ->addLayout(get_field_partial('components.answers'))
             ->addLayout(get_field_partial('components.boxes'))

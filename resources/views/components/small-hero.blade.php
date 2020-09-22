@@ -5,7 +5,7 @@
       <div class="small-hero__content">
         <h1>
           <span class="title small-hero__title">
-            {{ $data['title'] }}
+            {!! $data['title'] !!}
           </span>
         </h1>
       </div>

@@ -1,10 +1,10 @@
 <section class="section">
   <div class="container">
     <span class="prefix">
-      Blog
+      {{ $data['prefix'] }}
     </span>
     <h2 class="headline">
-      Najnowsze wpisy
+      {!! $data['title'] !!}
     </h2>
     <div class="blog">
       <a href="#" class="blog__item">

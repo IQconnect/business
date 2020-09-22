@@ -1,7 +1,7 @@
 <section class="section section--color apartments-page">
   <div class="container">
     <h2 class="title text--center primary">
-      {{ $data['title'] }}
+      {!! $data['title'] !!}
     </h2>
     <p class="headline">
       {!! $data['desc'] !!}

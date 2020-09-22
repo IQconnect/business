@@ -6,7 +6,7 @@
         <div>
           @if($data['title'])
             <h2 class="title box-img__title">
-              {{ $data['title'] }}
+              {!! $data['title'] !!}
             </h2>
           @endif
           <div class="text">

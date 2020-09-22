@@ -8,7 +8,7 @@
               {{ $data['prefix'] }}
             </span>
             <span class="title">
-              {{ $data['title'] }}
+              {!! $data['title'] !!}
             </span>
           </h2>
         </div>

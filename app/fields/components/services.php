@@ -16,7 +16,7 @@ $services
     ->addTextarea('desc', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis'])
     ->addLink('link', ['label' => 'Link do usług'])
     ->addRepeater('services', ['label' => 'Usługi', 'layout' => 'block'])
-        ->addText('title', ['label' => 'Tytuł usługi'])
+        ->addTextarea('title', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Tytuł usługi'])
         ->addImage('image', ['label' => 'Tło usługi'])
         ->addLink('link', ['label' => 'Link do usługi']);
 

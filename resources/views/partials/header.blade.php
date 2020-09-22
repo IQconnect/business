@@ -42,7 +42,7 @@
   </nav>
 </header>
 <div class="sections">
-  @include('components.top')
+  {{-- @include('components.top')
   @include('components.stats')
   @include('components.services')
   @include('components.video')
@@ -52,5 +52,5 @@
   @include('components.prices')
   @include('components.blog')
   @include('components.answers')
-  @include('components.boxes')
+  @include('components.boxes') --}}
 </div>

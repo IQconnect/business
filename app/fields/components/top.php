@@ -12,9 +12,9 @@ $config = (object) [
 $top = new FieldsBuilder('top', ['label' => 'Top']);
 
 $top
-    ->addText('title', ['label' => 'Tytuł', 'wrapper' => ['width' => 30]])
-    ->addText('subtitle', ['label' => 'Podtytuł', 'wrapper' => ['width' => 30]])
-    ->addText('sign', ['label' => 'Podpis', 'wrapper' => ['width' => 30]])
+    ->addTextarea('title', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Tytuł', 'wrapper' => ['width' => 50]])
+    ->addText('subtitle', ['label' => 'Podtytuł', 'wrapper' => ['width' => 50]])
+    ->addText('sign', ['label' => 'Podpis', 'wrapper' => ['width' => 100]])
     ->addRepeater('boxes', ['label' => 'Boxy', 'min' => 3, 'max' => 3, 'layout' => 'block'])
         ->addText('title', ['label' => 'Tytuł'])
         ->addImage('image', ['label' => 'Obrazek'])

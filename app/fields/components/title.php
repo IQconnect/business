@@ -12,7 +12,7 @@ $config = (object) [
 $title = new FieldsBuilder('title', ['label' => 'Tytuł']);
 
 $title
-    ->addText('prefix', ['label' => 'Prefix sekcji', 'wrapper' => ['width' => 30]])
-    ->addText('title', ['label' => 'Tytuł sekcji', 'wrapper' => ['width' => 30]]);
+    ->addText('prefix', ['label' => 'Prefix sekcji', 'wrapper' => ['width' => 50]])
+    ->addTextarea('title', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Tytuł sekcji', 'wrapper' => ['width' => 50]]);
 
 return $title;

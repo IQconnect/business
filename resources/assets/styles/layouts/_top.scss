@@ -40,6 +40,18 @@
         grid-row: 1 / 3;
       }
     }
+
+    &:nth-child(2) {
+      #{$root}__bar {
+        background-color: lighten($secondary3, 12);
+      }
+    }
+
+    &:nth-child(3) {
+      #{$root}__bar {
+        background-color: lighten($secondary, 12);
+      }
+    }
   }
 
   &__image {
@@ -63,14 +75,6 @@
     @include media("<md") {
       transform: translate(0);
       padding: gutter(1.5) gutter(2);
-    }
-
-    &--color2 {
-      background-color: lighten($secondary3, 12);
-    }
-
-    &--color3 {
-      background-color: lighten($secondary, 12);
     }
   }
 }

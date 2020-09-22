@@ -1,4 +1,6 @@
 .boxes {
+  $root: &;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: gutter(2.5);
@@ -36,18 +38,18 @@
       transform: translateY(4px);
     }
 
-    &--color1 {
-      background-color: $secondary;
+    &:nth-child(2) {
+      background: $secondary;
       color: $white;
     }
 
-    &--color2 {
-      background-color: $secondary2;
+    &:nth-child(4) {
+      background: $secondary2;
       color: $white;
     }
 
-    &--color3 {
-      background-color: $primary;
+    &:nth-child(6) {
+      background: $primary;
       color: $white;
     }
   }

@@ -7,7 +7,7 @@
         <div>
           @if($data['header'] == 'tak')
             <h2 class="title">
-              {{ $data['title'] }}
+              {!! $data['title'] !!}
             </h2>
           @endif
           <div class="text">
