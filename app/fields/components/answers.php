@@ -15,6 +15,6 @@ $answers
     ->addFields(get_field_partial('components.title'))
     ->addRepeater('questions', ['label' => 'Pytania', 'layout' => 'block'])
         ->addText('question', ['label' => 'Pytanie'])
-        ->addLink('link', ['label' => 'Link']);;
+        ->addLink('link', ['label' => 'Link']);
 
 return $answers;

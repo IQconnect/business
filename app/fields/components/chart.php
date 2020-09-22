@@ -15,6 +15,6 @@ $chart
     ->addFields(get_field_partial('components.title'))
     ->addRepeater('chart', ['label' => 'Usługi', 'layout' => 'block'])
         ->addText('title', ['label' => 'Tytuł'])
-        ->addImage('precent', ['label' => 'Procent']);
+        ->addText('precent', ['label' => 'Procent']);
 
 return $chart;

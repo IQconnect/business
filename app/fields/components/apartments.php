@@ -17,6 +17,6 @@ $apartments
     ->addRepeater('apartments'. ['label' => 'Apartamenty'])
         ->addText('title', ['label' => 'Tytuł', 'wrapper' => ['width' => 30]])
         ->addLink('link', ['label' => 'Link'])
-        ->addImage('image',['label' => 'Zdjęcie', 'wrapper' => ['width' => '80%']]);
+        ->addImage('image', ['label' => 'Zdjęcie', 'wrapper' => ['width' => '80%']]);
 
 return $apartments;
