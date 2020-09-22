@@ -2,11 +2,11 @@
   width: 100%;
   text-align: center;
   border-collapse: collapse;
-  //border: 1px solid $primary;
+  //border: 1px solid $secondary;
   margin: gutter(3) auto !important;
 
   thead {
-    //border-bottom: 1px solid $primary;
+    //border-bottom: 1px solid $secondary;
 
     th {
       padding: gutter(2) gutter(1) gutter(1);
@@ -29,8 +29,8 @@
 
   tbody {
     font-weight: $bold;
-    color: $primary;
-    border-bottom: 1px solid $primary;
+    color: $secondary;
+    border-bottom: 1px solid $secondary;
 
     td {
       display: table-cell;
@@ -63,13 +63,13 @@
 
   &__options {
     text-align: left;
-    background-color: $primary;
+    background-color: $secondary;
     color: $white;
     padding: gutter(0.7) gutter(2);
     font-size: 15px !important;
     font-weight: $semi-bold;
     letter-spacing: -0.25px;
-    border-bottom: 1px solid $primary;
+    border-bottom: 1px solid $secondary;
     width: gutter(48);
     line-height: 20px;
   }
