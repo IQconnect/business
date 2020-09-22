@@ -19,10 +19,8 @@ const accordion = {
     this.triggers.forEach((item) => {
       item.addEventListener('click', (event) => {
         event.preventDefault();
-        let target = event.currentTarget;
-        this.getelement
-        const content = target.nextElementSibling;
-        const arrow = target.querySelector('.accordion__arrow');
+        const content = item.nextElementSibling;
+        const arrow = item.querySelector('.accordion__arrow');
         content.classList.toggle(CLASS);
         arrow.classList.toggle(CLASSARROW);
       });

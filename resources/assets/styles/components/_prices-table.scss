@@ -65,10 +65,12 @@
     text-align: left;
     background-color: $primary;
     color: $white;
-    padding: gutter(0.4) gutter(2);
-    font-size: 16px !important;
+    padding: gutter(0.7) gutter(2);
+    font-size: 15px !important;
     font-weight: $semi-bold;
     letter-spacing: -0.25px;
     border-bottom: 1px solid $primary;
+    width: gutter(48);
+    line-height: 20px;
   }
 }

@@ -23,31 +23,53 @@
   }
 
   &__icon1 {
+    @include cssLock("font-size", $container, 1920, (80, 130));
+    @include cssLock("margin-left", $container, 1920, (-80, -280));
+
     position: absolute;
     color: $primary;
-    font-size: 150px;
+    //font-size: 130px;
     top: 200px;
-    margin-left: - gutter(25);
+    //margin-left: - gutter(28);
     animation: icon1 20s linear infinite;
+
+    @include media("<1400px") {
+      display: none;
+    }
   }
 
   &__icon2 {
+    @include cssLock("font-size", $container, 1920, (70, 200));
+    @include cssLock("margin-right", $container, 1920, (-80, -300));
+    @include cssLock("top", $container, 1920, (80, 50));
+
     position: absolute;
     color: $secondary;
-    font-size: 150px;
-    top: 100px;
+    //font-size: 200px;
+    top: 50px;
     right: 0;
-    margin-right: - gutter(20);
-    animation: icon2 10s linear infinite;
+    //margin-right: - gutter(30);
+    animation: icon2 7s infinite;
+
+    @include media("<1400px") {
+      display: none;
+    }
   }
 
   &__icon3 {
+    @include cssLock("font-size", $container, 1920, (100, 320));
+    @include cssLock("margin-right", $container, 1920, (-80, -330));
+
     position: absolute;
     color: $secondary3;
-    font-size: 250px;
-    top: 280px;
+    //font-size: 320px;
+    top: 250px;
     right: 0;
-    margin-right: - gutter(25);
-    animation: icon3 10s linear infinite;
+    //margin-right: - gutter(33);
+    animation: icon3 7s infinite;
+
+    @include media("<1400px") {
+      display: none;
+    }
   }
 }

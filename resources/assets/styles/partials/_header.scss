@@ -2,11 +2,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 5px 15px rgba($black, 0.05);
   z-index: 700;
   background-color: $white;
   transition: $transition;
   transform: translateY(0);
+
+  &--scroll {
+    box-shadow: 0 5px 15px rgba($black, 0.05);
+  }
 
   &__row {
     width: 100%;
@@ -49,6 +52,15 @@
   &__contact {
     @include media("<md") {
       display: none;
+    }
+  }
+
+  &__search {
+    padding: gutter(1);
+    margin-right: - gutter(1);
+
+    i {
+      font-size: 28px;
     }
   }
 

@@ -2,7 +2,7 @@
   $root: &;
 
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
 
   @include media("<md") {
     grid-template-columns: 1fr;
@@ -10,9 +10,18 @@
   }
 
   &__title {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 38px;
     max-width: gutter(65);
+    padding-right: gutter(5);
+    display: block;
+
+    @include media("<md") {
+      font-size: 20px;
+      line-height: 28px;
+      max-width: 100%;
+      padding-right: 0;
+    }
   }
 
   &__item {

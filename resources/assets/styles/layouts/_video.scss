@@ -1,13 +1,14 @@
 .video {
   $root: &;
 
-  @include cssLock("height", 360, $container, (250, 480));
+  @include cssLock("height", 360, $container, (250, 400));
 
   position: relative;
   background-color: $white;
   display: block;
   width: 100%;
   overflow: hidden;
+  margin-top: gutter(2);
 
   &:hover {
     #{$root}__bg {

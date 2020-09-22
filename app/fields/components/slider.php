@@ -9,14 +9,13 @@ $config = (object) [
     'wrapper' => ['width' => 30],
 ];
 
-$slider = new FieldsBuilder('slider', ['label' => 'Slider']);
+$slider = new FieldsBuilder('slider', ['label' => 'Opinie']);
 
 $slider
-    ->addRepeater('baner', ['min' => 0, 'layout' => 'block'])
-        ->addImage('image', ['label' => 'Tło'])
-            ->setInstructions('Wybierz tło slidera')
-        ->addText('title', ['label' => 'Tytuł'])
-        ->addWysiwyg('desc', ['label' => 'Opis', 'media_upload' => 0])
-        ->addLink('link', ['label' => 'Link']);
+    ->addFields(get_field_partial('components.title'))
+    ->addRepeater('slider', ['label' => 'Opinie', 'min' => 0, 'layout' => 'block'])
+        ->addWysiwyg('opinion', ['label' => 'Opinia', 'media_upload' => 0])
+        ->addText('author', ['label' => 'Autor'])
+        ->addText('desc', ['label' => 'Stanowisko']);
 
 return $slider;

@@ -11,4 +11,7 @@ $config = (object) [
 
 $blog = new FieldsBuilder('blog', ['label' => 'Blog']);
 
+$textImg
+    ->addFields(get_field_partial('components.title'));
+
 return $blog;

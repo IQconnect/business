@@ -9,9 +9,11 @@ $config = (object) [
     'wrapper' => ['width' => 30],
 ];
 
-$textImg = new FieldsBuilder('text', ['label' => 'text']);
+$text = new FieldsBuilder('text', ['label' => 'text']);
 
-$textImg
-    ->addWysiwyg('text', ['label' => 'Treść', 'media_upload' => 0]);
+$text
+    ->addFields(get_field_partial('components.title'))
+    ->addWysiwyg('text', ['label' => 'Treść', 'media_upload' => 0])
+    ->addLink('link', ['label' => 'Link']);
 
-return $textImg;
+return $text;

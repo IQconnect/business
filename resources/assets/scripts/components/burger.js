@@ -1,5 +1,5 @@
 const CONFIG = {
-  TRIGGER: '.burger',
+  TRIGGER: '.header__burger',
   NAV: '.nav',
   NAVCLASS: 'nav--active',
   CLASS: 'open',
