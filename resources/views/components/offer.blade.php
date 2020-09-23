@@ -1,6 +1,6 @@
 <section class="section">
   <div class="container">
-    @include('blocks.section-info', ['pretitle' => $data['prefix'], 'title' => $data['title'], 'desc' => $data['desc']])
+    @include('components.section-info', ['pretitle' => $data['prefix'], 'title' => $data['title'], 'desc' => $data['desc']])
     <div class="offer">
       <div class="offer__column">
         @foreach($data['boxes'] as $item)

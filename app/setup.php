@@ -145,3 +145,15 @@ add_action('init', function () {
     });
 });
 
+add_action('init', function () {
+    if (function_exists('acf_add_local_field_group')) {
+        // Gutenberg blocks
+        collect(glob(config('theme.dir') . '/app/fields/blocks/*.php'))->map(function ($field) {
+            return require_once($field);
+        })->map(function ($field) {
+            if ($field instanceof FieldsBuilder) {
+                acf_add_local_field_group($field->build());
+            }
+        });
+    }
+});

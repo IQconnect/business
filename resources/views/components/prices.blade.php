@@ -92,7 +92,7 @@
           </div>
         </div>  --}}
         <div class="prices__table">
-          @include("blocks.prices-table")
+          @include("components.prices-table")
         </div>
         {!! $data['info'] !!}
       </div>

@@ -58,7 +58,7 @@
     grid-template-columns: 1fr 1fr;
     gap: gutter(2);
     max-width: gutter(120);
-    margin: gutter(4) 0;
+    margin: gutter(2) 0;
 
     @include media("<md") {
       grid-template-columns: 1fr;

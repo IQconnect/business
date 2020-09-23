@@ -2,7 +2,7 @@
   <div class="container">
     @foreach ($data['gallery'] as $item)
       <div class="section__columns">
-        @include('blocks.section-info', ['title' => $item['title'], 'desc' => $item['desc'], 'type' => 'column'])
+        @include('components.section-info', ['title' => $item['title'], 'desc' => $item['desc'], 'type' => 'column'])
         <div class="gallery gallery--columns">
           @php
             $galleryName = rand(1, 999);
