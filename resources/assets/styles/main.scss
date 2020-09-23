@@ -28,6 +28,9 @@
 @import "./components/block-header";
 @import "./components/content";
 
+// builder
+@import "./builder/**/*";
+
 // layouts
 @import "./layouts/**/*";
 

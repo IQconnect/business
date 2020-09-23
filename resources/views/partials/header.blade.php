@@ -41,16 +41,3 @@
     @endif
   </nav>
 </header>
-{{-- <div class="sections">
-  @include('components.top')
-  @include('components.stats')
-  @include('components.services')
-  @include('components.video')
-  @include('components.chart')
-  @include('components.team')
-  @include('components.slider')
-  @include('components.prices')
-  @include('components.blog')
-  @include('components.answers')
-  @include('components.boxes')
-</div> --}}
