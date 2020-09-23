@@ -78,6 +78,7 @@
   },
   "dependencies": {
     "@animated-burgers/burger-slip": "^1.1.2",
+    "@fancyapps/fancybox": "^3.5.7",
     "@srexi/purecounterjs": "^1.1.1",
     "animate.css": "^3.7.0",
     "bootstrap": "v4.2.1",
