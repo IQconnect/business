@@ -121,11 +121,11 @@ function image($id, $size, $class)
 
 function blog() {
     $posts = get_posts(array(
-        'numberposts'      => 6,
+        'numberposts'      => 2,
         'orderby'   => 'date',
         'sort_order' => 'asc',
         'post_type'  => 'post',
-        'category'   => 3,
+        'category'   => 1,
     ));
 
     return $posts;

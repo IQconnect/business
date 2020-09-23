@@ -2,7 +2,7 @@
   <a href="{{ get_permalink() }}" class="blog__item">
     <div class="blog__image">
         {{-- <img src="https://placeimg.com/640/480/nature" alt="cover"> --}}
-        {!! get_the_post_thumbnail('', 'full', array('class'=> 'post__image')) !!}
+        {!! get_the_post_thumbnail('', 'full', array('alt'=> 'blog')) !!}
         <div class="blog__cover">
         <div>
             <i class="fas fa-eye blog__icon"></i>
