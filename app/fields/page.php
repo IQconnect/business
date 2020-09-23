@@ -10,7 +10,6 @@ $page
     ->setLocation('post_template', '==', 'views/template-custom.blade.php');
 
 $page
-    ->addFields(get_field_partial('partials.builder'))
-    ->addFields(get_field_partial('partials.main'));
+    ->addFields(get_field_partial('partials.builder'));
 
 return $page;

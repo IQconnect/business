@@ -1,4 +1,6 @@
-@include("components.contact")
+@if(get_field('show_form'))
+  @include("components.contact")
+@endif
 @include("components.contact-bar")
 <footer class="footer">
   <div class="container footer__row">
