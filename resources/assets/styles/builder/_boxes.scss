@@ -22,6 +22,10 @@
     color: $black;
     transition: $transition;
 
+    @include media("<1000px") {
+      padding: gutter(8) gutter(4);
+    }
+
     @include media("<md") {
       padding: gutter(2.5);
       min-height: gutter(25);
@@ -32,8 +36,8 @@
     }
 
     &:hover {
-      background-color: $black;
-      color: $white;
+      background-color: $black !important;
+      color: $white !important;
       text-decoration: none;
       transform: translateY(4px);
     }
@@ -43,9 +47,21 @@
       color: $white;
     }
 
+    &:nth-child(3) {
+      @include media("<md") {
+        background-color: $secondary2;
+        color: $white;
+      }
+    }
+
     &:nth-child(4) {
       background: $secondary2;
       color: $white;
+
+      @include media("<md") {
+        background-color: $bg;
+        color: $black;
+      }
     }
 
     &:nth-child(6) {

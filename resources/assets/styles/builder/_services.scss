@@ -56,6 +56,18 @@
     &:nth-child(6) {
       #{$root}__cover {
         background-color: rgba($secondary2, 0.8);
+
+        @include media("<md") {
+          background-color: rgba($black, 0.4);
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      #{$root}__cover {
+        @include media("<md") {
+          background-color: rgba($secondary2, 0.8);
+        }
       }
     }
   }
