@@ -15,7 +15,7 @@
 <div class="team__boxes">
   @foreach(get_field('boxes') as $item)
     <div class="team__box">
-      <h3 class="title title--medium">
+      <h3 class="title title--smedium">
         {!! $item['title'] !!}
       </h3>
       <div class="text text--small">

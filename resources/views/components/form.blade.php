@@ -20,7 +20,7 @@
   </div>
   <label class="form__field form__field--checkbox">
     <span class="text form__checkbox-desc">
-      Zapoznałem się z Polityką prywatności serwisu domena.pl oraz wyrażam zgodę na przetwarzanie udostępnionych przeze mnie danych osobowych na zasadach opisanych w Polityce prywatności dostępnej w Serwisie. Oświadczam, że są mi znane cele przetwarzania danych oraz moje uprawnienia.
+      {!! get_option_field('check') !!}
     </span>
     <input class="form__checkbox" type="checkbox" checked="checked">
     <span class="form__check"></span>

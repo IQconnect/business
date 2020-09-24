@@ -3,17 +3,13 @@
     <div class="contact">
       <div>
         <span class="prefix">
-          Bądźmy w kontakcie
+          {{ get_option_field('cprefix') }}
         </span>
         <h2 class="headline">
-          Bez wyzwań<br>
-          nie ma rozwoju
+          {!! get_option_field('ctitle') !!}
         </h2>
         <p class="text section__desc contact__desc">
-          Skoro i tak będziesz myśleć, myśl odważnie.<br>
-          Ja obserwuję, analizuję, wyjaśniam, tworzę, inspiruję.<br>
-          Napisz do mnie jeżeli szukasz skutecznych rozwiązań.<br>
-          Chętnie Ci pomogę.
+          {!! get_option_field('cdesc') !!}
         </p>
       </div>
       <div class="contact__form">

@@ -15,11 +15,12 @@
   }
 
   &__copyright {
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: $semi-bold;
   }
 
   &__logo {
-    width: gutter(10);
+    width: gutter(8);
     height: auto;
 
     @include media("<md") {

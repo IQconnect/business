@@ -25,8 +25,8 @@
         <div class="burger burger-slip header__burger">
           <div class="burger-lines"></div>
         </div>
-        <a class="button header__contact" href="#">
-          Kontakt
+        <a class="button header__contact" href="{{ get_option_field('cbutton')['url'] }}">
+          {{ get_option_field('cbutton')['title'] }}
         </a>
       </div>
     </div>

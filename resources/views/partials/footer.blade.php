@@ -7,6 +7,8 @@
     <div class="text footer__copyright">
       {{ get_option_field("copyright") }}
     </div>
-    <img class="footer__logo" src="{{ get_option_field('iqlogo')['url'] }}" alt="{{ get_option_field('iqlogo')['alt'] }}">
+    <a href="http://iqconnect.pl/">
+      <img class="footer__logo" src="{{ get_option_field('iqlogo')['url'] }}" alt="{{ get_option_field('iqlogo')['alt'] }}">
+    </a>
   </div>
 </footer>
