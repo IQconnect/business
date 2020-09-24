@@ -25,7 +25,20 @@ $option_page
     ->addTab('Stopka', ['placement' => 'left'])
         ->addText('cbtitle', ['label' => 'Tytuł paska w stopce'])
         ->addText('copyright')
-        ->addImage('iqlogo', ['label' => 'Wykonanie']);
-
+        ->addImage('iqlogo', ['label' => 'Wykonanie'])
+    ->addTab('Cennik', ['placement' => 'left'])
+        ->addText('prices_title', ['label' => 'Tytuł cennika'])
+        ->addText('ptitle1', ['label' => 'Tytuł pakietu 1', 'wrapper' => ['width' => 50]])
+        ->addTextarea('pdesc1', ['rows' => 3, 'new_lines' => 'br', 'label' => 'Opis Pakietu 1', 'wrapper' => ['width' => 50]])
+        ->addText('ptitle2', ['label' => 'Tytuł pakietu 2', 'wrapper' => ['width' => 50]])
+        ->addTextarea('pdesc2', ['rows' => 3, 'new_lines' => 'br', 'label' => 'Opis Pakietu 2', 'wrapper' => ['width' => 50]])
+        ->addText('ptitle3', ['label' => 'Tytuł pakietu 3', 'wrapper' => ['width' => 50]])
+        ->addTextarea('pdesc3', ['rows' => 3, 'new_lines' => 'br', 'label' => 'Opis Pakietu 3', 'wrapper' => ['width' => 50]])
+        ->addRepeater('prices_body', ['label' => 'Tabelka z parametrami'])
+            ->addText('title', ['label' => 'Tytuł'])
+            ->addText('option1', ['label' => 'Pakiet 1'])
+            ->addText('option2', ['label' => 'Pakiet 2'])
+            ->addText('option3', ['label' => 'Pakiet 3'])
+        ->endRepeater();
 
 return $option_page;
