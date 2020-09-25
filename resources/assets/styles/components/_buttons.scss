@@ -72,6 +72,37 @@
     }
   }
 
+  &--simple {
+    position: relative;
+    color: $primary;
+    border: 0;
+    padding: 0;
+    margin: gutter(2) 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px;
+      height: 1px;
+      width: 100%;
+      background-color: $primary;
+      transition: $transition;
+    }
+
+    &:hover {
+      background: transparent;
+      transform: translateY(-2.5px);
+      color: $secondary2;
+
+      &::after {
+        background-color: $secondary2;
+      }
+    }
+  }
+
   &--text-color {
     color: $primary;
     position: relative;

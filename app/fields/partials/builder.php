@@ -12,6 +12,7 @@ $builder
             ->addLayout(get_field_partial('components.top'))
             ->addLayout(get_field_partial('components.stats'))
             ->addLayout(get_field_partial('components.services'))
+            ->addLayout(get_field_partial('components.page_services'))
             ->addLayout(get_field_partial('components.video'))
             ->addLayout(get_field_partial('components.chart'))
             ->addLayout(get_field_partial('components.text'))
