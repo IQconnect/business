@@ -8,11 +8,13 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="title">
-        {{ the_title() }}
-      </h2>
-      <div class="content text">
-        {{ the_content() }}
+      <div class="text content-page">
+        <h2 class="title">
+          {{ the_title() }}
+        </h2>
+        <div class="content-page__main">
+          {{ the_content() }}
+        </div>
       </div>
     </div>
   </section>
