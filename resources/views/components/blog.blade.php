@@ -22,9 +22,11 @@
           </div>
           <div class="blog__content">
             <span class="text blog__tags">
-              @foreach(get_the_tags($post->ID) as $tag)
-                #{{ $tag->name }}
-              @endforeach
+              @if(get_the_tags())
+                @foreach(get_the_tags($post->ID) as $tag)
+                  #{{ $tag->name }}
+                @endforeach
+              @endif
             </span>
             <h3 class="title title--medium blog__title">
               {{ $post->post_title }}
