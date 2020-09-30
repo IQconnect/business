@@ -86,7 +86,9 @@
   }
 
   &__title {
-    padding-bottom: gutter(1.5);
+    padding-bottom: gutter(1.8);
+    font-size: 25px;
+    line-height: 30px;
     transition: $transition;
   }
 }

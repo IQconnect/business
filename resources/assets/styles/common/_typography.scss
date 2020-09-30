@@ -21,6 +21,7 @@
 
 .title {
   @include cssLock("font-size", 360, $container, (21, 28));
+  @include cssLock("line-height", 360, $container, (25, 34));
 
   position: relative;
   font-family: $font-title;
