@@ -14,7 +14,7 @@
     </span>
     <div class="top">
       @foreach($data['boxes'] as $item)
-        <a href="#" class="top__box">
+        <a href="{{ $item['link']['url'] }}" class="top__box">
           <img src="{{ $item['image']['url'] }}" alt="{{ $item['title'] }}" class="top__image"/>
           <div class="top__bar">
             <h3 class="title title--small is-regular">

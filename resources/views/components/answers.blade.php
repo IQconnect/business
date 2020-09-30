@@ -11,7 +11,7 @@
       </div>
       <div class="answers__list">
         @foreach($data['questions'] as $item)
-          <a href="#" class="answers__item">
+          <a href="{{ $item['link']['url'] }}" class="answers__item">
             <div class="answers__circle">
               ?
             </div>
