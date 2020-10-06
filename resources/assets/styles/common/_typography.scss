@@ -42,7 +42,7 @@
   }
 
   &--small {
-    @include cssLock("font-size", 360, $container, (16, 18));
+    @include cssLock("font-size", 360, $container, (16, 17.5));
 
     font-weight: $semi-bold;
     line-height: 1.5em;

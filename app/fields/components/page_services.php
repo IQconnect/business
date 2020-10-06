@@ -18,6 +18,13 @@ $page_services
         ->addTextarea('title', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Tytuł usługi'])
         ->addTextarea('desc', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Opis'])
         ->addImage('image', ['label' => 'Tło usługi'])
+        ->addLink('link', ['label' => 'Link do usługi'])
+    ->endRepeater()
+    ->addText('title2', ['label' => 'Dodatkowe usługi', 'wrapper' => ['width' => 50]])
+    ->addRepeater('services2', ['label' => 'Usługi', 'layout' => 'block'])
+        ->addTextarea('title', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Tytuł usługi'])
+        ->addTextarea('desc', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Opis'])
+        ->addImage('image', ['label' => 'Tło usługi'])
         ->addLink('link', ['label' => 'Link do usługi']);
 
 return $page_services;
