@@ -1,6 +1,6 @@
 <div class="search-modal">
   <form action="#" class="search-modal__form">
-    <input type="text" placeholder="Szukaj..." class="search-modal__input">
+    <input type="text" placeholder="Szukaj..." class="search-modal__input" name="s">
     <button type="submit" class="search-modal__button">
       Szukaj
     </button>
