@@ -14,16 +14,17 @@
   }
 
   &__item {
-    padding: gutter(8) gutter(5);
+    padding: gutter(8) gutter(3);
     background-color: $bg;
     display: flex;
     align-items: center;
     justify-content: center;
     color: $black;
     transition: $transition;
+    height: gutter(28);
 
     @include media("<1000px") {
-      padding: gutter(8) gutter(4);
+      padding: gutter(8) gutter(3);
     }
 
     @include media("<md") {

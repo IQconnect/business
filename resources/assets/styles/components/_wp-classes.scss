@@ -109,3 +109,14 @@
     margin: gutter(4) 0;
   }
 }
+
+.social-rocket-buttons-heading {
+  margin-top: gutter(4);
+  padding-bottom: gutter(1);
+
+  &::after {
+    content: "\f064";
+    font-family: $font-awesome;
+    margin-left: gutter(1.2);
+  }
+}
