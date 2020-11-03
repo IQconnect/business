@@ -8,5 +8,6 @@
         {!! the_content() !!}
       </div>
     </article>
+    {!! do_shortcode('[wpdiscuz_comments]') !!}
   </div>
 </section>
