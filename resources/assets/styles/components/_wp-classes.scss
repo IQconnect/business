@@ -120,3 +120,7 @@
     margin-left: gutter(1.2);
   }
 }
+
+.fbc-page .fbc-wrap .fbc-items li a:last-child {
+  margin-right: 0 !important;
+}

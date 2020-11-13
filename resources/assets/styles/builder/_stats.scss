@@ -47,9 +47,28 @@
     @include media("<md") {
       padding: 0 gutter(2);
     }
+
+    img {
+      @include media("<=xs") {
+        width: gutter(3);
+        height: auto;
+      }
+    }
   }
 
   &__count {
     padding-left: gutter(2);
+
+    .headline {
+      @include media("<=xs") {
+        font-size: 18px !important;
+      }
+    }
+
+    .title {
+      @include media("<=xs") {
+        font-size: 12px !important;
+      }
+    }
   }
 }
