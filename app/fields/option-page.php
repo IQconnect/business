@@ -11,10 +11,13 @@ $option_page
 
 $option_page
     ->addTab('Kontakt', ['placement' => 'left'])
-        ->addText('name', ['label' => 'Nazwa firmy'])
-        ->addTextarea('address', ['label' => 'Adres firmy', 'rows' => '2', 'new_lines' => 'br'])
+        ->addText('firm', ['label' => 'Nazwa firmy'])
+        ->addText('name', ['label' => 'Właściciel firmy'])
+        // ->addTextarea('address', ['label' => 'Adres firmy', 'rows' => '2', 'new_lines' => 'br'])
         ->addText('phone', ['label' => 'Telefon firmowy'])
         ->addText('email', ['label' => 'Email firmowy'])
+        ->addText('facebook', ['label' => 'Facebook'])
+        ->addText('linkedin', ['label' => 'LinkedIn'])
         ->addText('cprefix', ['label' => 'Prefix kontaktu', 'wrapper' => ['width' => 50]])
         ->addTextarea('ctitle', ['rows' => 2, 'new_lines' => 'br', 'label' => 'Tytuł kontaktu', 'wrapper' => ['width' => 50]])
         ->addTextarea('cdesc', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis kontaktu'])

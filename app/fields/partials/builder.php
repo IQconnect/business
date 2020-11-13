@@ -21,6 +21,7 @@ $builder
             ->addLayout(get_field_partial('components.blog'))
             ->addLayout(get_field_partial('components.answers'))
             ->addLayout(get_field_partial('components.boxes'))
+            ->addLayout(get_field_partial('components.page_contact'))
             ->addLayout('content', ['label' => 'Treść']);
 
 return $builder;
