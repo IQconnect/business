@@ -5,7 +5,7 @@ const slider = {
   init() {
     this.slider = new Flickity('.main-carousel', {
       prevNextButtons: true,
-      pageDots: true,
+      pageDots: false,
       wrapAround: true,
       autoPlay: 4000,
     });
