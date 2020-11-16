@@ -7,8 +7,11 @@
       <a href="{{ get_option_field('cbutton')['url'] }}" class="button button--light">
         {{ get_option_field('cbutton')['title'] }}
       </a>
-      <a href="#" class="button button--text">
-        Czat online
+      <a href="{{ get_option_field("facebook") }}">
+        <i class="fab fa-facebook-f contact-bar__icon"></i>
+      </a>
+      <a href="{{ get_option_field("linkedin") }}">
+        <i class="fab fa-linkedin-in contact-bar__icon"></i>
       </a>
     </div>
   </div>

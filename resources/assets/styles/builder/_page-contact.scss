@@ -14,7 +14,11 @@
   &__row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: gutter(5);
+    margin-top: gutter(4);
+
+    @include media("<1200px") {
+      margin-top: 0;
+    }
   }
 
   &__data {
@@ -44,6 +48,14 @@
     @include media("<1200px") {
       margin: auto;
       text-align: center;
+      width: 100%;
+    }
+
+    button {
+      @include media("<1200px") {
+        margin: auto;
+        display: block;
+      }
     }
   }
 

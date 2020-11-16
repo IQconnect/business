@@ -27,12 +27,12 @@
               {{ get_option_field("email") }}
             </a>
             <div class="page-contact__social">
-              <a class="link page-contact__facebook" href="mailto:{{ get_option_field("facebook") }}">
+              <a class="link page-contact__facebook" href="{{ get_option_field("facebook") }}">
                 <i class="fab fa-facebook-square"></i>
                 facebook
               </a>
               <br>
-              <a class="link page-contact__linkedin" href="mailto:{{ get_option_field("linkedin") }}">
+              <a class="link page-contact__linkedin" href="{{ get_option_field("linkedin") }}">
                 <i class="fab fa-linkedin"></i>
                 linkedin
               </a>

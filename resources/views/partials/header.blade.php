@@ -1,5 +1,5 @@
 <div class="search-modal">
-  <form action="#" class="search-modal__form">
+  <form class="search-modal__form" action="{{ get_home_url() }}">
     <input type="text" placeholder="Szukaj..." class="search-modal__input" name="s">
     <button type="submit" class="search-modal__button">
       Szukaj
