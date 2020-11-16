@@ -10,4 +10,13 @@
       display: none;
     }
   }
+
+  &__list {
+    margin: gutter(3) auto gutter(4);
+    display: none;
+
+    @include media("<md") {
+      display: block;
+    }
+  }
 }

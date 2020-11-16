@@ -38,7 +38,7 @@
   }
 
   &--smedium {
-    font-size: 24px;
+    @include cssLock("font-size", 360, $container, (20, 24));
   }
 
   &--small {

@@ -15,3 +15,6 @@
 <div class="prices__table">
   @include("components.prices-table")
 </div>
+<div class="prices__list">
+  @include("components.prices-list")
+</div>
