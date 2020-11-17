@@ -3,6 +3,7 @@
 @section('content')
 <section class="section">
   <div class="container">
+    {!! do_shortcode('[flexy_breadcrumb]') !!}
     @if (!have_posts())
     <div class="alert alert-warning">
         {{ __('Sorry, no results were found.', 'sage') }}

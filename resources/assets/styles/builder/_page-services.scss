@@ -6,10 +6,22 @@
   margin: gutter(8) auto;
   gap: gutter(4);
 
+  @include media("<lg") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media("<md") {
+    grid-template-columns: 1fr;
+  }
+
   &__image {
     position: relative;
     height: gutter(25);
     width: 100%;
+
+    @include media("<md") {
+      height: gutter(20);
+    }
 
     img {
       width: 100%;
