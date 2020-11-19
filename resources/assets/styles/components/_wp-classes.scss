@@ -124,3 +124,9 @@
 .fbc-page .fbc-wrap .fbc-items li a:last-child {
   margin-right: 0 !important;
 }
+
+.wp-block-image {
+  img {
+    height: 100% !important;
+  }
+}
