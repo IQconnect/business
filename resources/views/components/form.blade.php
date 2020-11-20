@@ -1,4 +1,4 @@
-<form id="myform" class="form @if($contact) mb-0 mt-0 @endif">
+<form id="myform" class="form @if($contact) mb-0 mt-0 @endif" action="http://businessconsultancy.pl/mail.php">
   <div class="form__row">
     <div class="form__field">
       <input placeholder="Imię i nazwisko" name="name" id="name" class="form__input" type="text">
