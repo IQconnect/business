@@ -7,7 +7,7 @@
     <div class="text footer__copyright">
       {{ get_option_field("copyright") }}
     </div>
-    <a href="http://iqconnect.pl/">
+    <a href="https://iqconnect.pl/">
       <img class="footer__logo" src="{{ get_option_field('iqlogo')['url'] }}" alt="{{ get_option_field('iqlogo')['alt'] }}">
     </a>
   </div>
@@ -18,7 +18,7 @@
         e.preventDefault();
         $.ajax({
           type: 'post',
-          url: 'http://businessconsultancy.pl/mail.php',
+          url: 'https://businessconsultancy.pl/mail.php',
           data: $(this).serialize(),
           success: function () {
             alert('Wiadomość została wysłana!');
